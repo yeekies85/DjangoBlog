@@ -17,7 +17,13 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
+from posts.views import index
+from posts.views import about
+from posts.views import index_use_template
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("index", index),
+    path("", index_use_template),
+    path("about", about),
 ]
