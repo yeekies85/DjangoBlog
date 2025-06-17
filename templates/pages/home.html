@@ -1,0 +1,19 @@
+{% extends "scaffolds/base.html" %}
+{% load static %}
+
+
+{% block content %}
+<h1> 
+        Welcome to MyBlog    </h1>
+              <img src="{% static "images/logo.jpg" %}">
+    <hr>
+    
+    {% for article in article_records%}
+        <a href="/post/{{article.slug}}">
+            <p class='post-title'>{{ article.title }}</p>
+        </a>
+        <p class ='post-date'> {{article.pub_date}} </p>
+        
+  
+        {% endfor %}
+{% endblock %}
