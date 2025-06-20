@@ -6,7 +6,7 @@
     </h1>
     <hr>
     {% load markdown_tag %}
-    <p class="post-body"> {{article.content | markdown | safe |linebreaks}} </p>
+    <p class="post-body"> {{article.content | markdown | safe | linebreaks}} </p>
     <p class="post-date"> {{article.pub_date}} </p>    
     <a href="/"><h5> Back to Home </h5></a>
 

@@ -66,7 +66,7 @@ TEMPLATES = [
             ],
             "libraries": {
                 "markdown_tag": "libraries.filter.markdown_filter",
-                }
+            }
         },
     },
 ]
