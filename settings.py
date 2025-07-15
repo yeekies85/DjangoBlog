@@ -129,3 +129,6 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+LINE_CHANNEL_SECRET = "20abca3660a4aa2e67f18033f9db9c19"
+LINE_CHANNEL_TOKEN  = "lqilpwYMc2wGNmNMZUjvM7BhBKLBBAtt+izsU8STBDzHEeA7FzLSCjC8lEbDH7ii6at0uzf8YmAerAUCbd1rlFRgiRZTtCYHGF23RkC9SxTM0+q4QXhuBCsc4cQXpETrLXwbr7DZIy/c4LOwpBJijwdB04t89/1O/w1cDnyilFU="
