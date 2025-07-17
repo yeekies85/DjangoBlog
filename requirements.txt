@@ -39,3 +39,4 @@ urllib3==2.0.4
 wrapt==1.15.0
 yarl==1.9.2
 line-bot-sdk==3.11.0
+mysqlclien==2.2.7
