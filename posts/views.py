@@ -2,6 +2,7 @@ from django.shortcuts import render
 from datetime import datetime
 from django.http import HttpResponse
 from posts.models import Post
+from django.http import JsonResponse
 # Create your views here.
 
 
@@ -33,3 +34,8 @@ def about(request):
 
 def login(requests):
     return render(requests, 'pages/login.html')
+
+def showArticleList(requests):
+    article = Post.objects.all().values()
+    article = list(article)
+    return JsonResponse(article, safe=False)
